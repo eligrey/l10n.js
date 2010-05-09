@@ -2,7 +2,7 @@ l10n.js
 =======
 
 l10n.js is a JavaScript library that enables localization through the native JavaScript
-string methods intended for it, gracefully degrading if the library is not present. As it
+method intended for it, gracefully degrading if the library is not present. As it
 gracefully degrades, you can make Ajax applications, JavaScript libraries, etc. that can
 be localized but not require l10n.js to function. There is already a placeholder method
 for all API calls as specified in the ECMAScript specification and is present in all
@@ -59,7 +59,7 @@ Getting Started
     your document. I recommend putting it in the document's `<head>`.
  4. Place `<script type="text/javascript" src="path/to/l10n.js"></script>`
     anywhere after the `<link>` tag.
- 5. Use `toLocaleString` for any strings you wish to localize.
+ 5. Call `toLocaleString()` on any strings you wish to localize.
 
 
   [2]: http://purl.eligrey.com/github/l10n.js/raw/master/l10n.js
@@ -85,6 +85,27 @@ With this helper function, you can start writing `l("Your localizable string")` 
 of `"Your localizable string".toLocaleString()`. I chose `l` instead of `_` (an
 underscore), because it's easier to spot so you can quickly skim your code to see which
 strings are localizable.
+
+### Variable replacement
+
+If you don't mind requiring l10n.js for your JavaScript application or library to
+function, I suggest using short variable strings instead of default strings. It saves
+bandwidth by decreasing the size of localization files, and it enables you to write
+nice, short code as such in the following.
+
+* `document.title = l("%title.search")`
+    * Example results: `"Seach - Acme, Inc."`
+* `confirm(l("%confirm.deleteAccount"))`
+    * Example results: `"Are you sure you want to delete your account?"`
+* `link.href = "http://www.google." + l("%locale.tld")`
+    * Example results: `"http://www.google.co.uk"` 
+
+Often, string concatenation is used instead of replacement in JavaScript. With l10n.js,
+to make localization easier, you may have to use replacements instead. You might want to
+use a JavaScript library that implements something similar to C++'s `sprintf()`. A nice
+JavaScript implementation I'd recommend is [php.js's `sprintf()`][4].
+
+  [4]: http://phpjs.org/functions/sprintf
 
 
 ### When localizations are downloaded
