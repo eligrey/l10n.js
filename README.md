@@ -151,8 +151,8 @@ them) containing their type if they are not functions or return type if they are
 <dl>
   <dt><code>String.<strong title="String">toLocaleString</strong>([<strong title="Object or String or Boolean">localizations</strong>])</code></dt>
   <dd>
-    If <code title="Object">localizations</code> is an object,
-    <code>String.<strong title="Object">localizations</strong></code> is extended with it.
+    If <code title="Object">localizations</code> is an object, it is added to the
+    localizations.
     <br />
     If <code title="String">localizations</code> is a string, it is requested as JSON and
     then <code>String.<strong title="Object">localizations</strong></code> is extended
