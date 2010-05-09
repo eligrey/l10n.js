@@ -19,6 +19,8 @@ Currently the demo only supports the following locales.
 * [English](http://purl.eligrey.com/l10n.js/demo/en)
 * [American English](http://purl.eligrey.com/l10n.js/demo/en-US)
 * [British English](http://purl.eligrey.com/l10n.js/demo/en-GB)
+* [Hixie American English](http://purl.eligrey.com/l10n.js/demo/en-US-x-Hixie) (my locale)
+* [Hixie British English](http://purl.eligrey.com/l10n.js/demo/en-US-x-Hixie)
 * [Portuguese](http://purl.eligrey.com/l10n.js/demo/pt)
 * [Spanish](http://purl.eligrey.com/l10n.js/demo/es)
 
@@ -88,7 +90,7 @@ strings are localizable.
 ### When localizations are downloaded
 
 If you are using single localization URLs
-(`<link rel="localization" lang="..." href="..." type="application/x-l10n+json"/>`), they will only be downloaded when
+(`<link rel="localization" hreflang="..." href="..." type="application/x-l10n+json"/>`), they will only be downloaded when
 needed. If you are using multiple localizations in one
 (`<link rel="localizations" href="..." type="application/json"/>`), then the file will be downloaded right away,
 but externally linked localizations in the localization file will not be. If you provide
@@ -124,10 +126,11 @@ It is equivalent to the following HTML.
     });
     </script>
 
-You can also include single localizations as shown in the following. Note that the `rel`
-attribute is `localization`, without an "s":
+You can also include single localizations by specifying the standard HTML5 `hreflang` link
+element attribute and using a rel of `localization` instead of `localizations` with an
+'s', as shown in the following.
 
-    <link rel="localization" lang="en-US" href="american-english.json" type="application/x-l10n+json"/>
+    <link rel="localization" hreflang="en-US" href="american-english.json" type="application/x-l10n+json"/>
 
 The JSON file for the localization might look like the following.
 
