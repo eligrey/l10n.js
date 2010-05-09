@@ -155,8 +155,7 @@ them) containing their type if they are not functions or return type if they are
     localizations.
     <br />
     If <code title="String">localizations</code> is a string, it is requested as JSON and
-    then <code>String.<strong title="Object">localizations</strong></code> is extended
-    with it.
+    then added to the localizations.
     <br />
     If <code title="Boolean">localizations</code> is <code>false</code>, then all
     localizations are reset.
