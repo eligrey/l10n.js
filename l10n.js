@@ -35,7 +35,7 @@ newcap: true, immed: true, maxlen: 90, indent: 4 */
 	requestJSON = function (uri) {
 		var req = new XHR();
 		
-		// sadly, this has to be blocking for graceful degradation of the API
+		// sadly, this has to be blocking to allow for a graceful degrading API
 		req.open("GET", uri, false);
 		req.send(null);
 		
@@ -56,7 +56,7 @@ newcap: true, immed: true, maxlen: 90, indent: 4 */
 	load = String.toLocaleString = function (data) {
 		if (arguments.length > 0 && typeof data !== "number") {
 			if (typeof data === stringType) {
-				load( requestJSON(data) );
+				load(requestJSON(data));
 			} else if (data === false) {
 				// reset all localizations
 				localizations = {};
@@ -152,16 +152,16 @@ newcap: true, immed: true, maxlen: 90, indent: 4 */
 		i = linkElems.length;
 		
 		while (i--) {
-			var linkElem = linkElems[i];
+			var linkElem = linkElems[i],
 			relList = (linkElem.getAttribute("rel") || "").toLowerCase().split(/\s+/);
 			
 			// multiple localizations
 			if (relList.indexOf("localizations") !== -1) {
-				load( linkElem.getAttribute("href") );
+				load(linkElem.getAttribute("href"));
 			} else if (relList.indexOf("localization") !== -1) {
 				// single localization
 				var localization = {};
-				localization[getLocale(linkElem.getAttribute("lang") || "")] =
+				localization[getLocale(linkElem.getAttribute("hreflang") || "")] =
 					linkElem.getAttribute("href");
 				load(localization);
 			}
