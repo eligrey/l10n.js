@@ -15,9 +15,9 @@
 /*jslint white: true, undef: true, nomen: true, eqeqeq: true, bitwise: true, regexp: true,
 newcap: true, immed: true, maxlen: 90, indent: 4 */
 
+"use strict";
+
 (function (String) {
-	"use strict";
-	
 	var undefType = "undefined",
 	stringType    = "string",
 	hasOwnProp    = Object.prototype.hasOwnProperty,
