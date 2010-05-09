@@ -13,6 +13,16 @@
 		"l10n.js demo": "British English - l10n.js demo",
 		"You are viewing the original page locale.": "You are viewing a British English localization of this page."
 	},
+	"en-US-x-Hixie": {
+		"en": "en-US-x-Hixie",
+		"l10n.js demo": "Hixie American English - l10n.js demo",
+		"You are viewing the original page locale.": "You are viewing a Hixie American English localization of this page."
+	},
+	"en-GB-x-Hixie": {
+		"en": "en-GB-x-Hixie",
+		"l10n.js demo": "Hixie British English - l10n.js demo",
+		"You are viewing the original page locale.": "You are viewing a Hixie British English localization of this page."
+	},
 	"pt": {
 		"en": "pt",
 		"l10n.js demo": "Português - Demo do l10n.js",
