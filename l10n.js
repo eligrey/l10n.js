@@ -24,6 +24,7 @@ newcap: true, immed: true, maxlen: 90, indent: 4 */
 	loadQueues    = {},
 	localeCache   = {},
 	localizations = {},
+	False         = !1,
 	XHR,
 	
 	getLocale = function (locale) {
@@ -36,7 +37,7 @@ newcap: true, immed: true, maxlen: 90, indent: 4 */
 		var req = new XHR();
 		
 		// sadly, this has to be blocking to allow for a graceful degrading API
-		req.open("GET", uri, false);
+		req.open("GET", uri, False);
 		req.send(null);
 		
 		if (req.status !== 200) {
@@ -57,7 +58,7 @@ newcap: true, immed: true, maxlen: 90, indent: 4 */
 		if (arguments.length > 0 && typeof data !== "number") {
 			if (typeof data === stringType) {
 				load(requestJSON(data));
-			} else if (data === false) {
+			} else if (data === False) {
 				// reset all localizations
 				localizations = {};
 			} else {
@@ -67,14 +68,12 @@ newcap: true, immed: true, maxlen: 90, indent: 4 */
 						var localization = data[locale];
 						locale = getLocale(locale);
 						
-						if (!(locale in localizations)) {
-							// initiate locale if not existing
+						if (!(locale in localizations) || localization === False) {
+							// reset locale if not existing or reset flag is specified
 							localizations[locale] = {};
 						}
 						
-						if (localization === false) {
-							// reset locale if reset flag specified
-							localizations[locale] = {};
+						if (localization === False) {
 							continue;
 						}
 						
