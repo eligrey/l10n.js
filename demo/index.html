@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<title>l10n.js demo</title>
+<style type="text/css">
+body {
+	font-size: xx-large;
+	text-align: center;
+}
+</style>
+<link rel="localizations" href="localizations.json" type="application/json" />
+<script type="text/javascript" src="json2.js"></script>
+<script type="text/javascript" src="../l10n.js"></script>
+</head>
+<body>
+<h1 id="title">l10n.js demo</h1>
+<p id="info">You are viewing the original page locale.</p>
+<script type="text/javascript">
+if (location.hash) {
+	String.locale = location.hash.substr(2);	
+}
+
+document.title = document.title.toLocaleString();
+
+var info  = document.getElementById("info").firstChild,
+    title = document.getElementById("title").firstChild;
+
+document.documentElement.lang = document.documentElement.lang.toLocaleString();
+document.documentElement.dir = document.documentElement.dir.toLocaleString();
+info.nodeValue = info.nodeValue.toLocaleString();
+title.nodeValue = title.nodeValue.toLocaleString();
+</script>
+</body>
+</html>

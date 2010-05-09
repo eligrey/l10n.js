@@ -1,0 +1,26 @@
+{
+	"en": {
+		"l10n.js demo": "English - l10n.js demo",
+		"You are viewing the original page locale.": "You are viewing an English localization of this page."
+	},
+	"en-US": {
+		"en": "en-US",
+		"l10n.js demo": "American English - l10n.js demo",
+		"You are viewing the original page locale.": "You are viewing an American English localization of this page."
+	},
+	"en-GB": {
+		"en": "en-GB",
+		"l10n.js demo": "British English - l10n.js demo",
+		"You are viewing the original page locale.": "You are viewing a British English localization of this page."
+	},
+	"pt": {
+		"en": "pt",
+		"l10n.js demo": "Português - Demo do l10n.js",
+		"You are viewing the original page locale.": "Vocé esta a ver uma localização Portuguesa desta página."
+	},
+	"es": {
+		"en": "es",
+		"l10n.js demo": "Español - l10n.js demo",
+		"You are viewing the original page locale.": "Mira ustéd una versión español de esta pagina."
+	}
+}
