@@ -17,10 +17,11 @@ You can try out the [online demo][1] to see l10n.js in action.
 Currently the demo only supports the following locales.
 
 * [English](http://purl.eligrey.com/l10n.js/demo/en)
-* [American English](http://purl.eligrey.com/l10n.js/demo/en-US)
-* [British English](http://purl.eligrey.com/l10n.js/demo/en-GB)
-* [Hixie American English](http://purl.eligrey.com/l10n.js/demo/en-US-x-Hixie) (my locale)
-* [Hixie British English](http://purl.eligrey.com/l10n.js/demo/en-US-x-Hixie)
+    * [American English](http://purl.eligrey.com/l10n.js/demo/en-US)
+        * [Hixie American English](http://purl.eligrey.com/l10n.js/demo/en-US-x-Hixie)
+          (my locale)
+    * [British English](http://purl.eligrey.com/l10n.js/demo/en-GB)
+        * [Hixie British English](http://purl.eligrey.com/l10n.js/demo/en-GB-x-Hixie)
 * [Portuguese](http://purl.eligrey.com/l10n.js/demo/pt)
 * [Spanish](http://purl.eligrey.com/l10n.js/demo/es)
 
