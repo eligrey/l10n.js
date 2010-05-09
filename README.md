@@ -19,7 +19,6 @@ Currently the demo only supports the following locales.
 * [English](http://purl.eligrey.com/l10n.js/demo/en)
     * [American English](http://purl.eligrey.com/l10n.js/demo/en-US)
         * [Hixie American English](http://purl.eligrey.com/l10n.js/demo/en-US-x-Hixie)
-          (my locale)
     * [British English](http://purl.eligrey.com/l10n.js/demo/en-GB)
         * [Hixie British English](http://purl.eligrey.com/l10n.js/demo/en-GB-x-Hixie)
 * [Portuguese](http://purl.eligrey.com/l10n.js/demo/pt)
