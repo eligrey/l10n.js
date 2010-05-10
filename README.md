@@ -25,7 +25,7 @@ Currently the demo only supports the following locales.
     * [Australian English](http://purl.eligrey.com/l10n.js/demo/en-AU)
 * [Portuguese](http://purl.eligrey.com/l10n.js/demo/pt)
 * [Spanish](http://purl.eligrey.com/l10n.js/demo/es)
-* [French](http://purl.eligrey.com/l10n.js/demo/ft)
+* [French](http://purl.eligrey.com/l10n.js/demo/fr)
 
 If you know a language that isn't currently supported in the demo, I encourage you to
 contribute a localization by sending me your own localizations, either [through GitHub][2]
