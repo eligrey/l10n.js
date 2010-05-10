@@ -28,7 +28,8 @@ Currently the demo only supports the following locales.
 * [French](http://purl.eligrey.com/l10n.js/demo/ft)
 
 If you know a language that isn't currently supported in the demo, I encourage you to
-contribute a localization. The following strings would need to be translated:
+contribute a localization by sending me your own localizations, either [through GitHub][2]
+or [directly][3]. The following strings would need to be localized:
 
 * `l10n.js demo` to `{Locale} - l10n.js demo` in the locale.
 * `You are viewing the original page locale.` to `You are viewing a {locale} localization
@@ -37,6 +38,8 @@ contribute a localization. The following strings would need to be translated:
 * Optionally, `ltr` to `rtl` if the locale uses right-to-left directionality.
 
   [1]: http://purl.eligrey.com/l10n.js/demo
+  [2]: http://github.com/inbox/new/eligrey
+  [3]: http://purl.eligrey.com/contact
 
 
 Supported Browsers
@@ -53,9 +56,9 @@ Supported Browsers
 Getting Started
 ---------------
 
- 1. [Download l10n.js][2].
+ 1. [Download l10n.js][4].
  2. Localize strings used in your JavaScript application. See the [demo localizations
-    file][3] for an example localizations file. You can also specify external
+    file][5] for an example localizations file. You can also specify external
     localizations in your main localizations file by assigning a URL string to a language
     code, such as `"en-us": "localizations/en-us.json"`.
  3. Include the appropriate link elements, as described in the usage section, anywhere in
@@ -65,8 +68,8 @@ Getting Started
  5. Call `toLocaleString()` on any strings you wish to localize.
 
 
-  [2]: http://purl.eligrey.com/github/l10n.js/raw/master/l10n.js
-  [3]: http://purl.eligrey.com/github/l10n.js/blob/master/demo/localizations.json
+  [4]: http://purl.eligrey.com/github/l10n.js/raw/master/l10n.js
+  [5]: http://purl.eligrey.com/github/l10n.js/blob/master/demo/localizations.json
 
 
 Usage
