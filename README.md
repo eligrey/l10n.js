@@ -18,9 +18,9 @@ Currently the demo only supports the following locales.
 
 * [English](http://purl.eligrey.com/l10n.js/demo/en)
     * [American English](http://purl.eligrey.com/l10n.js/demo/en-US)
-        * [Hixie American English](http://purl.eligrey.com/l10n.js/demo/en-US-x-Hixie)
+        * [American Hixie English](http://purl.eligrey.com/l10n.js/demo/en-US-x-Hixie)
     * [British English](http://purl.eligrey.com/l10n.js/demo/en-GB)
-        * [Hixie British English](http://purl.eligrey.com/l10n.js/demo/en-GB-x-Hixie)
+        * [British Hixie English](http://purl.eligrey.com/l10n.js/demo/en-GB-x-Hixie)
 * [Portuguese](http://purl.eligrey.com/l10n.js/demo/pt)
 * [Spanish](http://purl.eligrey.com/l10n.js/demo/es)
 
@@ -86,6 +86,7 @@ of `"Your localizable string".toLocaleString()`. I chose `l` instead of `_` (an
 underscore), because it's easier to spot so you can quickly skim your code to see which
 strings are localizable.
 
+
 ### Variable replacement
 
 If you don't mind requiring l10n.js for your JavaScript application or library to
@@ -111,12 +112,12 @@ JavaScript implementation I'd recommend is [php.js's `sprintf()`][4].
 ### When localizations are downloaded
 
 If you are using single localization URLs
-(`<link rel="localization" hreflang="..." href="..." type="application/x-l10n+json"/>`), they will only be downloaded when
-needed. If you are using multiple localizations in one
-(`<link rel="localizations" href="..." type="application/json"/>`), then the file will be downloaded right away,
-but externally linked localizations in the localization file will not be. If you provide
-an interface for your users to change locales, any non-loaded localization files will
-be loaded when necessary.
+(`<link rel="localization" hreflang="..." href="..." type="application/x-l10n+json"/>`),
+they will only be downloaded when needed. If you are using multiple localizations in one
+(`<link rel="localizations" href="..." type="application/x-l10n+json"/>`), then the file
+will be downloaded right away, but externally linked localizations in the localization
+file will not be. If you provide an interface for your users to change locales, any
+non-loaded localization files will be loaded when necessary.
 
 
 ### Including localizations with link elements
@@ -136,16 +137,14 @@ The following is an example localization file for
       "fr": "path/to/french-localization.json"
     }
 
-It is equivalent to the following HTML.
+It is equivalent to the following JavaScript code.
 
-    <script type="text/javascript">
     String.toLocaleString({
       "en-US": {
           "What is your favourite colour?": "What is your favorite color?"
       },
       "fr": "path/to/french-localization.json"
     });
-    </script>
 
 You can also include single localizations by specifying the standard HTML5 `hreflang` link
 element attribute and using a rel of `localization` instead of `localizations` with an
