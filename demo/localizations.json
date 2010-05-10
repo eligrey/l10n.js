@@ -13,10 +13,20 @@
 		"l10n.js demo": "British English - l10n.js demo",
 		"You are viewing the original page locale.": "You are viewing a British English localisation of this page."
 	},
+	"en-CA": {
+		"en": "en-CA",
+		"l10n.js demo": "Canadian English - l10n.js demo",
+		"You are viewing the original page locale.": "You are viewing a Canadian English localisation of this page."
+	},
+	"en-AU": {
+		"en": "en-AU",
+		"l10n.js demo": "Australian English - l10n.js demo",
+		"You are viewing the original page locale.": "You are viewing an Australian English localisation of this page."
+	},
 	"en-US-x-Hixie": {
 		"en": "en-US-x-Hixie",
 		"l10n.js demo": "American Hixie English - l10n.js demo",
-		"You are viewing the original page locale.": "You are viewing a American Hixie English localization of this page."
+		"You are viewing the original page locale.": "You are viewing an American Hixie English localization of this page."
 	},
 	"en-GB-x-Hixie": {
 		"en": "en-GB-x-Hixie",
@@ -32,5 +42,11 @@
 		"en": "es",
 		"l10n.js demo": "Español - l10n.js demo",
 		"You are viewing the original page locale.": "Mira ustéd una versión español de esta pagina."
+	},
+	"fr": {
+		"en": "fr",
+		"l10n.js demo": "Français - l10n.js démo",
+		"You are viewing the original page locale.": "Vous sont voyez une localisation français de cette page."
 	}
+	
 }
