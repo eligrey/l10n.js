@@ -3,36 +3,36 @@
 		"l10n.js demo": "English - l10n.js demo",
 		"You are viewing the original page locale.": "You are viewing an English localization of this page."
 	},
-	"en-US": {
-		"en": "en-US",
-		"l10n.js demo": "American English - l10n.js demo",
-		"You are viewing the original page locale.": "You are viewing an American English localization of this page."
-	},
-	"en-GB": {
-		"en": "en-GB",
-		"l10n.js demo": "British English - l10n.js demo",
-		"You are viewing the original page locale.": "You are viewing a British English localisation of this page."
-	},
-	"en-CA": {
-		"en": "en-CA",
-		"l10n.js demo": "Canadian English - l10n.js demo",
-		"You are viewing the original page locale.": "You are viewing a Canadian English localisation of this page."
-	},
-	"en-AU": {
-		"en": "en-AU",
-		"l10n.js demo": "Australian English - l10n.js demo",
-		"You are viewing the original page locale.": "You are viewing an Australian English localisation of this page."
-	},
-	"en-US-x-Hixie": {
-		"en": "en-US-x-Hixie",
-		"l10n.js demo": "American Hixie English - l10n.js demo",
-		"You are viewing the original page locale.": "You are viewing an American Hixie English localization of this page."
-	},
-	"en-GB-x-Hixie": {
-		"en": "en-GB-x-Hixie",
-		"l10n.js demo": "British Hixie English - l10n.js demo",
-		"You are viewing the original page locale.": "You are viewing a British Hixie English localisation of this page."
-	},
+		"en-US": {
+			"en": "en-US",
+			"l10n.js demo": "American English - l10n.js demo",
+			"You are viewing the original page locale.": "You are viewing an American English localization of this page."
+		},
+			"en-US-x-Hixie": {
+				"en": "en-US-x-Hixie",
+				"l10n.js demo": "American Hixie English - l10n.js demo",
+				"You are viewing the original page locale.": "You are viewing an American Hixie English localization of this page."
+			},
+		"en-GB": {
+			"en": "en-GB",
+			"l10n.js demo": "British English - l10n.js demo",
+			"You are viewing the original page locale.": "You are viewing a British English localisation of this page."
+		},
+			"en-GB-x-Hixie": {
+				"en": "en-GB-x-Hixie",
+				"l10n.js demo": "British Hixie English - l10n.js demo",
+				"You are viewing the original page locale.": "You are viewing a British Hixie English localisation of this page."
+			},
+		"en-CA": {
+			"en": "en-CA",
+			"l10n.js demo": "Canadian English - l10n.js demo",
+			"You are viewing the original page locale.": "You are viewing a Canadian English localisation of this page."
+		},
+		"en-AU": {
+			"en": "en-AU",
+			"l10n.js demo": "Australian English - l10n.js demo",
+			"You are viewing the original page locale.": "You are viewing an Australian English localisation of this page."
+		},
 	"pt": {
 		"en": "pt",
 		"l10n.js demo": "Português - Demo do l10n.js",
