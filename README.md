@@ -243,3 +243,6 @@ them) containing their type if they are not functions or return type if they are
     localization. It defaults to the user's own locale.
   </dd>
 </dl>
+
+
+![Tracking image](//in.getclicky.com/212712ns.gif =1x1)
