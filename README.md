@@ -134,7 +134,7 @@ directly in the file, you may want to assign a specifc localization JSON URL to 
 locale, as to save bandwidth by only downloading locales the user needs.
 
 The following is an example localization file for
-`<link rel="localization" href="path/to/localizations.json" type="application/x-l10n+json"/>`.
+`<link rel="localizations" href="path/to/localizations.json" type="application/x-l10n+json"/>`.
 
     {
       "en-US": {
@@ -143,14 +143,8 @@ The following is an example localization file for
       "fr": "path/to/french-localization.json"
     }
 
-It is equivalent to the following JavaScript code.
-
-    String.toLocaleString({
-      "en-US": {
-          "What is your favourite colour?": "What is your favorite color?"
-      },
-      "fr": "path/to/french-localization.json"
-    });
+Using localization files is the same as calling `String.toLocaleString()` witht the JSON
+localizations object as the first parameter.
 
 You can also include single localizations by specifying the standard HTML5 `hreflang` link
 element attribute and using a rel of `localization` instead of `localizations` with an
