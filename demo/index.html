@@ -15,21 +15,29 @@ body {
 </head>
 <body>
 <h1 id="title">l10n.js demo</h1>
-<p id="info">You are viewing the original page locale.</p>
+<p id="info">Your locale is unsupported.</p>
 <script type="text/javascript">
 if (location.hash) {
 	String.locale = location.hash.substr(2);	
 }
 
-document.title = document.title.toLocaleString();
+var localize = function (string, fallback) {
+	var localized = string.toLocaleString();
+	if (localized !== string) {
+		return localized;
+	} else {
+		return fallback;
+	}
+};
 
-var info  = document.getElementById("info").firstChild,
-    title = document.getElementById("title").firstChild;
+var info = document.getElementById("info").firstChild,
+title = document.getElementById("title").firstChild;
 
-document.documentElement.lang = document.documentElement.lang.toLocaleString();
-document.documentElement.dir = document.documentElement.dir.toLocaleString();
-info.nodeValue = info.nodeValue.toLocaleString();
-title.nodeValue = title.nodeValue.toLocaleString();
+info.nodeValue = localize("%info", info.nodeValue);
+document.title = title.nodeValue = localize("%title", title.nodeValue);
+document.documentElement.dir = localize("%locale.dir", document.documentElement.dir);
+
+document.documentElement.lang = String.locale || document.documentElement.lang;
 </script>
 </body>
 </html>
