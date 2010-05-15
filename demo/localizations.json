@@ -46,5 +46,9 @@
 	"fr": {
 		"%title": "Français - Démo de l10n.js",
 		"%info": "Vous lisez une localisation en français de cette page."
+	},
+	"nl": {
+		"%title": "Nederlands - Demo van l10n.js",
+		"%info": "U ziet nu een Nederlandse lokalisatie van deze pagina."
 	}
 }
