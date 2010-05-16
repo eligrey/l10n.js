@@ -1,8 +1,8 @@
 /*
  * l10n.js
- * Version 0.1
+ * Version 0.1.1
  *
- * 2010-05-09
+ * 2010-05-16
  * 
  * By Elijah Grey, http://eligrey.com
  *
@@ -28,10 +28,10 @@ newcap: true, immed: true, maxlen: 90, indent: 4 */
 	XHR,
 	
 	getLocale = function (locale) {
-		// replace -x- for cases like en-US-x-hixie and en-US-hixie which are equivalent
+		// remove x- for cases like en-US-x-hixie and en-US-hixie which are equivalent
 		// also memoize the results for each locale
 		return localeCache[locale] ||
-		       (localeCache[locale] = locale.toLowerCase().replace(/-x-/g, "-"));
+		       (localeCache[locale] = locale.toLowerCase().replace(/x-/g, ""));
 	},
 	requestJSON = function (uri) {
 		var req = new XHR();
@@ -55,6 +55,8 @@ newcap: true, immed: true, maxlen: 90, indent: 4 */
 		}
 	},
 	load = String.toLocaleString = function (data) {
+		// don't handle function.toLocaleString(indentationAmount:Number), which is
+		// a JavaScript feature, though not an ECMAScript feature
 		if (arguments.length > 0 && typeof data !== "number") {
 			if (typeof data === stringType) {
 				load(requestJSON(data));
