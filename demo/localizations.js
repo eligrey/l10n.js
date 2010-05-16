@@ -52,7 +52,7 @@ String.toLocaleString({
 		"%info": "U ziet nu een Nederlandse lokalisatie van deze pagina."
 	},
 	"de": {
-		"%title": "Deutsch - l10n.js demo",
-		"%info": "Sie sehen hier die deutsche Lokalisierung dieser seite."
+		"%title": "Deutsch - l10n.js Demo",
+		"%info": "Sie sehen hier die deutsche Lokalisierung dieser Seite."
 	}
 });
