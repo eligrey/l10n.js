@@ -1,4 +1,4 @@
-{
+String.toLocaleString({
 	"en": {
 		"%title": "English - l10n.js demo",
 		"%info": "You are viewing an English localization of this page."
@@ -55,4 +55,4 @@
 		"%title": "Deutsch - l10n.js demo",
 		"%info": "Sie sehen hier die deutsche Lokalisierung dieser seite."
 	}
-}
+});
