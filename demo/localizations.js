@@ -54,5 +54,13 @@ String.toLocaleString({
 	"de": {
 		"%title": "Deutsch - l10n.js Demo",
 		"%info": "Sie sehen hier die deutsche Lokalisierung dieser Seite."
+	},
+	"fi": {
+		"%title": "Suomen kieli - l10n.js demo",
+		"%info": "Katselet Suomeksi käännettyä versiota tästä sivusta"
+	},
+	"vi": {
+		"%title": "Tiếng Việt - l10n.js demo",
+		"%info": "Bạn đang xem trang bằng phiên bản tiếng Việt."
 	}
 });
