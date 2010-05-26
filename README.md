@@ -30,6 +30,8 @@ Currently the demo only supports the following locales.
 * [French](http://purl.eligrey.com/l10n.js/demo/fr)
 * [Dutch](http://purl.eligrey.com/l10n.js/demo/nl)
 * [German](http://purl.eligrey.com/l10n.js/demo/de)
+* [Finnish](http://purl.eligrey.com/l10n.js/demo/fi)
+* [Vietnamese](http://purl.eligrey.com/l10n.js/demo/vi)
 
 If you know a language that isn't currently supported in the demo, I encourage you to
 contribute a localization by sending me your own localizations, either [through GitHub][2]
