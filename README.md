@@ -44,10 +44,6 @@ or [directly][3]. The following strings would need to be localized:
 * `en` to the locale's language code.
 * Optionally, `ltr` to `rtl` if the locale uses right-to-left directionality.
 
-  [1]: http://purl.eligrey.com/l10n.js/demo
-  [2]: http://github.com/inbox/new/eligrey
-  [3]: http://purl.eligrey.com/contact
-
 
 Supported Browsers
 ------------------
@@ -73,10 +69,6 @@ Getting Started
  4. Place `<script type="text/javascript" src="path/to/l10n.js"></script>`
     anywhere after the `<link>` tag.
  5. Call `toLocaleString()` on any strings you wish to localize.
-
-
-  [4]: http://purl.eligrey.com/github/l10n.js/raw/master/l10n.js
-  [5]: http://purl.eligrey.com/github/l10n.js/blob/master/demo/localizations.json
 
 
 Usage
@@ -117,9 +109,7 @@ nice, short code as such in the following.
 Often, string concatenation is used instead of replacement in JavaScript. With l10n.js,
 to make localization easier, you may have to use replacements instead. You might want to
 use a JavaScript library that implements something similar to C++'s `sprintf()`. A nice
-JavaScript implementation I'd recommend is [php.js's `sprintf()`][4].
-
-  [4]: http://phpjs.org/functions/sprintf
+JavaScript implementation I'd recommend is [php.js's `sprintf()`][6].
 
 
 ### When localizations are downloaded
@@ -248,3 +238,10 @@ them) containing their type if they are not functions or return type if they are
 
 
 ![Tracking image](//in.getclicky.com/212712ns.gif =1x1)
+
+  [1]: http://purl.eligrey.com/l10n.js/demo
+  [2]: http://github.com/inbox/new/eligrey
+  [3]: http://purl.eligrey.com/contact
+  [4]: http://purl.eligrey.com/github/l10n.js/raw/master/l10n.js
+  [5]: http://purl.eligrey.com/github/l10n.js/blob/master/demo/localizations.js
+  [6]: http://phpjs.org/functions/sprintf
