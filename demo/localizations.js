@@ -62,5 +62,9 @@ String.toLocaleString({
 	"vi": {
 		"%title": "Tiếng Việt - l10n.js demo",
 		"%info": "Bạn đang xem trang bằng phiên bản tiếng Việt."
+	},
+	"it": {
+		"%title": "Italiano - Demo di l10n.js",
+		"%info": "Stai leggendo una localizzazione in Italiano di questa pagina."
 	}
 });
