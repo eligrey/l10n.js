@@ -15,6 +15,8 @@
 /*jslint white: true, undef: true, nomen: true, eqeqeq: true, bitwise: true, regexp: true,
 newcap: true, immed: true, maxlen: 90, indent: 4 */
 
+/*! @source http://purl.eligrey.com/github/l10n.js/blob/master/l10n.js*/
+
 "use strict";
 
 (function (String) {
