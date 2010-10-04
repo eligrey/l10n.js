@@ -1,12 +1,12 @@
 l10n.js
 =======
 
-l10n.js is a JavaScript library that enables localization through the native JavaScript
-method intended for it, gracefully degrading if the library is not present. As it
-gracefully degrades, you can make Ajax applications, JavaScript libraries, etc. that can
-be localized but not require l10n.js to function. There is already a placeholder method
-for all API calls as specified in the ECMAScript specification and is present in all
-JavaScript engines, so when l10n.js isn't present, your application works fine.
+l10n.js is a JavaScript library that enables passive localization through native
+JavaScript methods, gracefully degrading if the library is not present. You can make
+Ajax applications, JavaScript libraries, etc. that can be localized but not require
+l10n.js to function. There is already a placeholder method for all API calls
+as specified in the ECMAScript specification and is present in all JavaScript
+engines, so when l10n.js isn't present, your application works fine.
 
 
 Demo
