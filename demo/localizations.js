@@ -66,5 +66,9 @@ String.toLocaleString({
 	"it": {
 		"%title": "Italiano - Demo di l10n.js",
 		"%info": "Stai leggendo una localizzazione in Italiano di questa pagina."
+	},
+	"no": {
+		"%title": "Norsk - Demo av l10n.js",
+		"%info": "Du ser den norske oversettelsen av denne siden."
 	}
 });
