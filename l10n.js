@@ -2,7 +2,7 @@
  * l10n.js
  * Version 0.1.2
  *
- * 2010-07-29
+ * 2010-12-09
  * 
  * By Eli Grey, http://eligrey.com
  * Licensed under the X11/MIT License
@@ -199,8 +199,8 @@ newcap: true, immed: true, maxlen: 90, indent: 4 */
 		;
 		
 		// Iterate through locales starting at most-specific until localization is found
-		while (i) {
-			var locale = parts.slice(0, i--).join("-");
+		do {
+			var locale = parts.slice(0, i).join("-");
 			// load locale if not loaded
 			if (locale in loadQueues) {
 				processLoadQueue(locale);
@@ -209,6 +209,7 @@ newcap: true, immed: true, maxlen: 90, indent: 4 */
 				return localizations[locale][thisValue];
 			}
 		}
+		while (i--);
 		
 		return thisValue;
 	};
