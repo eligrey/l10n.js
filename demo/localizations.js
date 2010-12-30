@@ -70,5 +70,9 @@ String.toLocaleString({
 	"no": {
 		"%title": "Norsk - Demo av l10n.js",
 		"%info": "Du ser den norske oversettelsen av denne siden."
+	},
+	"ru": {
+		"%title": "Русский - l10n.js демо",
+		"%info": "Вы просматриваете Русскую версию этой страницы."
 	}
 });
