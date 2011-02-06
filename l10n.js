@@ -1,8 +1,8 @@
 /*
  * l10n.js
- * Version 0.1.2
+ * Version 0.1.3
  *
- * 2010-12-09
+ * 2011-02-06
  * 
  * By Eli Grey, http://eligrey.com
  * Licensed under the X11/MIT License
@@ -44,10 +44,10 @@ newcap: true, immed: true, maxlen: 90, indent: 4 */
 		return -1;
 	}
 	, getLocale = function (locale) {
-		// remove x- for cases like en-US-x-hixie and en-US-hixie which are equivalent
+		// remove x- so locales such as en-US-x-Hixie and en-US-Hixie are equivalent
 		// also memoize the results for each locale
 		return localeCache[locale] ||
-		       (localeCache[locale] = locale.toLowerCase().replace(/x-/g, ""));
+		       (localeCache[locale] = locale.toLowerCase().replace(/(^|-)x-/g, "$1"));
 	}
 	, requestJSON = function (uri) {
 		var req = new XHR();
