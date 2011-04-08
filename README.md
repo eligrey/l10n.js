@@ -117,9 +117,9 @@ JavaScript implementation I'd recommend is [php.js's `sprintf()`][6].
 ### When localizations are downloaded
 
 If you are using single localization URLs
-(`<link rel="localization" hreflang="..." href="..." type="application/x-l10n+json"/>`),
+(`<link rel="localization" hreflang="..." href="..." type="application/vnd.oftn.l10n+json"/>`),
 they will only be downloaded when needed. If you are using multiple localizations in one
-(`<link rel="localizations" href="..." type="application/x-l10n+json"/>`), then the file
+(`<link rel="localizations" href="..." type="application/vnd.oftn.l10n+json"/>`), then the file
 will be downloaded right away, but externally linked localizations in the localization
 file will not be. If you provide an interface for your users to change locales, any
 non-loaded localization files will be loaded when necessary.
@@ -133,7 +133,7 @@ directly in the file, you may want to assign a specifc localization JSON URL to 
 locale, as to save bandwidth by only downloading locales the user needs.
 
 The following is an example localization file for
-`<link rel="localizations" href="path/to/localizations.json" type="application/x-l10n+json"/>`.
+`<link rel="localizations" href="path/to/localizations.json" type="application/vnd.oftn.l10n+json"/>`.
 
     {
       "en-US": {
@@ -149,7 +149,7 @@ You can also include single localizations by specifying the standard HTML5 `href
 element attribute and using a rel of `localization` instead of `localizations` with an
 's', as shown in the following.
 
-    <link rel="localization" hreflang="en-US" href="american-english.json" type="application/x-l10n+json"/>
+    <link rel="localization" hreflang="en-US" href="american-english.json" type="application/vnd.oftn.l10n+json"/>
 
 The JSON file for the localization might look like the following.
 
