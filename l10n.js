@@ -1,6 +1,6 @@
 /*
  * l10n.js
- * 2011-04-07
+ * 2011-05-12
  * 
  * By Eli Grey, http://eligrey.com
  * Licensed under the X11/MIT License
@@ -20,15 +20,14 @@
 		, String_ctr = String
 		, has_own_prop = Object.prototype.hasOwnProperty
 		, load_queues = {}
-		, locale_cache = {}
 		, localizations = {}
 		, FALSE = !1
 		// the official format is application/vnd.oftn.l10n+json, though l10n.js will also
 		// accept application/x-l10n+json and application/l10n+json
 		, l10n_js_media_type = /^\s*application\/(?:vnd\.oftn\.|x-)?l10n\+json\s*(?:$|;)/i
 		, XHR
-		, to_locale_string_prop = "toLocaleString"
-		, to_lowercase_prop = "toLowerCase"
+		, $to_locale_string = "toLocaleString"
+		, $to_lowercase = "toLowerCase"
 	
 	, array_index_of = Array.prototype.indexOf || function (item) {
 		var
@@ -43,13 +42,6 @@
 		}
 		
 		return -1;
-	}
-	, get_locale = function (locale) {
-		// remove x- so locales such as en-US-x-Hixie and en-US-Hixie are equivalent
-		// also memoize the results for each locale
-		return locale_cache[locale] || (locale_cache[locale] =
-			locale[to_lowercase_prop]().replace(/(^|-)x-/g, "$1")
-		);
 	}
 	, request_JSON = function (uri) {
 		var req = new XHR();
@@ -72,8 +64,8 @@
 			return JSON.parse(req.responseText);
 		}
 	}
-	, load = String_ctr[to_locale_string_prop] = function (data) {
-		// don't handle function[to_locale_string_prop](indentationAmount:Number)
+	, load = String_ctr[$to_locale_string] = function (data) {
+		// don't handle function[$to_locale_string](indentationAmount:Number)
 		if (arguments.length > 0 && typeof data !== "number") {
 			if (typeof data === string_type) {
 				load(request_JSON(data));
@@ -85,7 +77,7 @@
 				for (var locale in data) {
 					if (has_own_prop.call(data, locale)) {
 						var localization = data[locale];
-						locale = get_locale(locale);
+						locale = locale[$to_lowercase]();
 						
 						if (!(locale in localizations) || localization === FALSE) {
 							// reset locale if not existing or reset flag is specified
@@ -98,7 +90,7 @@
 						
 						// URL specified
 						if (typeof localization === string_type) {
-							if (get_locale(String_ctr.locale).indexOf(locale) === 0) {
+							if (String_ctr.locale[$to_lowercase]().indexOf(locale) === 0) {
 								localization = request_JSON(localization);
 							} else {
 								// queue loading locale if not needed
@@ -119,8 +111,8 @@
 				}
 			}
 		}
-		// Return what function[to_locale_string_prop]() normally returns
-		return Function.prototype[to_locale_string_prop].apply(String_ctr, arguments);
+		// Return what function[$to_locale_string]() normally returns
+		return Function.prototype[$to_locale_string].apply(String_ctr, arguments);
 	}
 	, process_load_queue = function (locale) {
 		var queue = load_queues[locale],
@@ -135,7 +127,7 @@
 		
 		delete load_queues[locale];
 	}
-	
+
 	;
 	
 	if (typeof XMLHttpRequest === undef_type && typeof ActiveXObject !== undef_type) {
@@ -176,7 +168,7 @@
 		while (i--) {
 			var
 				  elt = elts[i]
-				, rel = (elt.getAttribute("rel") || "")[to_lowercase_prop]().split(/\s+/)
+				, rel = (elt.getAttribute("rel") || "")[$to_lowercase]().split(/\s+/)
 			;
 			
 			if (l10n_js_media_type.test(elt.type)) {
@@ -186,7 +178,7 @@
 				} else if (array_index_of.call(rel, "localization") !== -1) {
 					// single localization
 					var localization = {};
-					localization[get_locale(elt.getAttribute("hreflang") || "")] =
+					localization[(elt.getAttribute("hreflang") || "")[$to_lowercase]()] =
 						elt.getAttribute("href");
 					load(localization);
 				}
@@ -194,9 +186,9 @@
 		}
 	}
 	
-	String_ctr.prototype[to_locale_string_prop] = function () {
+	String_ctr.prototype[$to_locale_string] = function () {
 		var
-			  parts = get_locale(String_ctr.locale).split("-")
+			  parts = String_ctr.locale[$to_lowercase]().split("-")
 			, i = parts.length
 			, this_val = this.valueOf()
 		;
