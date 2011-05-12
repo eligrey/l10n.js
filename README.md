@@ -239,7 +239,7 @@ them) containing their type if they are not functions or return type if they are
 </dl>
 
 
-![Tracking image](//in.getclicky.com/212712ns.gif =1x1)
+![Tracking image](//in.getclicky.com/212712ns.gif)
 
   [1]: http://purl.eligrey.com/l10n.js/demo
   [2]: http://github.com/inbox/new/eligrey
