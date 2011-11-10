@@ -3,7 +3,7 @@ This software is licensed under the MIT/X11 license.
 MIT/X11 license
 ---------------
 
-Copyright &copy; 2010 [Elijah Grey][1], who also goes by [Eli Grey][1].
+Copyright &copy; 2010 [The ΩF:∅ Foundation][1].
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -27,4 +27,4 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 
-  [1]: http://eligrey.com
+  [1]: http://oftn.org

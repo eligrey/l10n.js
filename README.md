@@ -35,6 +35,7 @@ Currently the demo only supports the following locales.
 * [Italian](http://purl.eligrey.com/l10n.js/demo/it)
 * [Norwegian](http://purl.eligrey.com/l10n.js/demo/no)
 * [Russian](http://purl.eligrey.com/l10n.js/demo/ru)
+* [Lojban](http://purl.eligrey.com/l10n.js/demo/jbo)
 
 If you know a language that isn't currently supported in the demo, I encourage you to
 contribute a localization by sending me your own localizations, either [through GitHub][2]

@@ -74,5 +74,9 @@ String.toLocaleString({
 	"ru": {
 		"%title": "Русский - l10n.js демо",
 		"%info": "Вы просматриваете Русскую версию этой страницы."
+	},
+	"jbo": {
+		"%title": "la'o cme. l10.js .cme mupli bau le jbobau",
+		"%info": ".i do ca viska lo jbobau xe fanva be lo ti judrysni"
 	}
 });
