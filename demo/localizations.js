@@ -21,11 +21,11 @@ String.toLocaleString({
 			},
 		"en-CA": {
 			"%title": "Canadian English - l10n.js demo",
-			"%info": "You are viewing a Canadian English localisation of this page."
+			"%info": "You are viewing a Canadian English localization of this page."
 		},
 			"en-CA-x-Hixie": {
 					"%title": "Canadian Hixie English - l10n.js demo",
-					"%info": "You are viewing a Canadian Hixie English localisation of this page."
+					"%info": "You are viewing a Canadian Hixie English localization of this page."
 			},
 		"en-AU": {
 			"%title": "Australian English - l10n.js demo",
