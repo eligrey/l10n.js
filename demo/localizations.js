@@ -78,7 +78,7 @@ String.toLocaleString({
 	"jbo": {
 		"%title": "la'o cme. l10n.js .cme mupli bau le jbobau",
 		"%info": ".i do ca viska lo jbobau xe fanva be lo ti judrysni"
-	}
+	},
 	"da": {
 		"%title": "Dansk. Demo af l10n.js",
 		"%info": ".Du ser den Danske oversættelse af denne side"
