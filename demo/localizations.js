@@ -82,5 +82,10 @@ String.toLocaleString({
 	"da": {
 		"%title": "Dansk. Demo af l10n.js",
 		"%info": ".Du ser den Danske oversættelse af denne side"
+	},
+	"he": {
+		"%locale.dir": "rtl",
+		"%title": "עברית - Demo do l10n.js",
+		"%info": "אתה צופה בלוקליזציה לעברית של עמוד זה."
 	}
 });
