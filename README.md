@@ -37,16 +37,16 @@ Currently the demo only supports the following locales.
 * [Russian](http://purl.eligrey.com/l10n.js/demo/ru)
 * [Lojban](http://purl.eligrey.com/l10n.js/demo/jbo)
 * [Danish](http://purl.eligrey.com/l10n.js/demo/da)
+* [Hebrew](http://purl.eligrey.com/l10n.js/demo/he)
 
 If you know a language that isn't currently supported in the demo, I encourage you to
 contribute a localization by sending me your own localizations, either [through GitHub][2]
 or [directly][3]. The following strings would need to be localized:
 
-* `l10n.js demo` to `{Locale} - l10n.js demo` in the locale.
-* `You are viewing the original page locale.` to `You are viewing a {locale} localization
+* `%title` to `{Locale} - l10n.js demo` in the locale.
+* `%info` to `You are viewing a {locale} localization
   of this page.` in the locale.
-* `en` to the locale's language code.
-* Optionally, `ltr` to `rtl` if the locale uses right-to-left directionality.
+* Optionally, `%locale.dir` to `rtl` if the locale uses right-to-left directionality.
 
 
 Supported Browsers
