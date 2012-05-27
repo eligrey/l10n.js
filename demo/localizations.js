@@ -37,7 +37,7 @@ String.toLocaleString({
 			},
 	"pt": {
 		"%title": "Português - Demo do l10n.js",
-		"%info": "Você está vendo uma localização Inglês desta página"
+		"%info": "Você está vendo uma localização em português desta página."
 	},
 	"es": {
 		"%title": "Español - l10n.js demo",
