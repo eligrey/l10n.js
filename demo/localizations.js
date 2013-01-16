@@ -95,5 +95,9 @@ String.toLocaleString({
 	"zh": {
 		"%title": "中文---l10n.js 演示",
 		"%info": "你在浏览本页面的中文本地化版本。"
+	},
+	"se": {
+		"%title": "Svenska - Demo av l10n.js",
+		"%info": "Du tittar på den svenska översättningen av denna sida"
 	}
 });
