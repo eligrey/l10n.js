@@ -7,34 +7,18 @@ String.toLocaleString({
 			"%title": "American English - l10n.js demo",
 			"%info": "You are viewing an American English localization of this page."
 		},
-			"en-US-x-Hixie": {
-				"%title": "American Hixie English - l10n.js demo",
-				"%info": "You are viewing an American Hixie English localization of this page."
-			},
 		"en-GB": {
 			"%title": "British English - l10n.js demo",
 			"%info": "You are viewing a British English localisation of this page."
 		},
-			"en-GB-x-Hixie": {
-				"%title": "British Hixie English - l10n.js demo",
-				"%info": "You are viewing a British Hixie English localisation of this page."
-			},
 		"en-CA": {
 			"%title": "Canadian English - l10n.js demo",
 			"%info": "You are viewing a Canadian English localization of this page."
 		},
-			"en-CA-x-Hixie": {
-					"%title": "Canadian Hixie English - l10n.js demo",
-					"%info": "You are viewing a Canadian Hixie English localization of this page."
-			},
 		"en-AU": {
 			"%title": "Australian English - l10n.js demo",
 			"%info": "You are viewing an Australian English localisation of this page."
 		},
-			"en-AU-x-Hixie": {
-				"%title": "Australian Hixie English - l10n.js demo",
-				"%info": "You are viewing an Australian Hixie English localisation of this page."
-			},
 	"pt": {
 		"%title": "Português - Demo do l10n.js",
 		"%info": "Você está vendo uma localização em português desta página."
