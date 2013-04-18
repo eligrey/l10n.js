@@ -232,10 +232,17 @@ them) containing their type if they are not functions or return type if they are
 ### Fields
 
 <dl>
-  <dt><code>String.<strong title="Object">locale</strong></code></dt>
+  <dt><code>String.<strong title="String">locale</strong></code></dt>
   <dd>
     A configurable string which represents the language code of the locale to use for
     localization. It defaults to the user's own locale.
+  </dd>
+  <dt><code>String.<strong title="String">defaultLocale</strong></code></dt>
+  <dd>
+    A configurable string which represents the language code of the default locale to
+    use for localization if no localizations are available in the user's locale. By
+    default this is not configured, and may be ignored if you are using l10n.js for
+    passive-only localizations.
   </dd>
 </dl>
 
