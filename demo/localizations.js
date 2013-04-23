@@ -83,5 +83,9 @@ String.toLocaleString({
 	"se": {
 		"%title": "Svenska - Demo av l10n.js",
 		"%info": "Du tittar på den svenska översättningen av denna sida"
+	},
+	"tr": {
+		"%title": "Türkçe - l10n.js demo",
+		"%info": "Bu sayfanın Türkçe yerelleştirilmiş halini görüntülüyorsunuz."
 	}
 });
