@@ -251,7 +251,7 @@ them) containing their type if they are not functions or return type if they are
 ![Tracking image](https://in.getclicky.com/212712ns.gif)
 
   [1]: http://purl.eligrey.com/l10n.js/demo
-  [2]: https://github.com/eligrey/l10n.js/fork
+  [2]: https://github.com/eligrey/l10n.js/edit/master/demo/localizations.js
   [3]: http://purl.eligrey.com/contact
   [4]: http://purl.eligrey.com/github/l10n.js/raw/master/l10n.js
   [5]: http://purl.eligrey.com/github/l10n.js/blob/master/demo/localizations.js
