@@ -87,5 +87,9 @@ String.toLocaleString({
 	"tr": {
 		"%title": "Türkçe - l10n.js demo",
 		"%info": "Bu sayfanın Türkçe yerelleştirilmiş halini görüntülüyorsunuz."
+	},
+	"hu": {
+		"%title": "Magyar - l10n.js demo",
+		"%info": "A magyar nyelvű honosítását nézed ennek az oldalnak."
 	}
 });
