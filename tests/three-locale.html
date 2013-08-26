@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Three Locales Test</title>
+    <link rel="stylesheet" href="qunit.css">
+</head>
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="../l10n.js"></script>
+    <script src="qunit.js"></script>
+</body>
+<script>
+var sentence1 = "%sentence1",
+    sentence2 = "%sentence2",
+    sentence3 = "%sentence3",
+    sentence4 = "%sentence4",
+    expected1En = 'There is 1 book on the shelf.',
+    expected1EnGb = 'There is 1 book on the shelf.',
+    expected1Zh = '书架上有一本书。',
+    expected2En = 'Peace and harmony in the neighborhood.',
+    expected2EnGb = 'Peace and harmony in the neighbourhood.',
+    expected2Zh = '邻里的平静与安宁。',
+    expected3En = 'For Honor & Glory.',
+    expected4En = 'There are many colors in this painting.',
+    expected4EnGb = 'There are many colours in this painting.';
+test('3 locales (default)', function () {
+    String.toLocaleString({
+        'en': {
+            '%sentence1': 'There is 1 book on the shelf.',
+            '%sentence2': 'Peace and harmony in the neighborhood.',
+            '%sentence3': 'For Honor & Glory.',
+            '%sentence4': 'There are many colors in this painting.'
+        },
+        'en-GB': {
+            '%sentence1': 'There is 1 book on the shelf.',
+            '%sentence2': 'Peace and harmony in the neighbourhood.',
+            '%sentence4': 'There are many colours in this painting.'
+        },
+        'zh': {
+            '%sentence1': '书架上有一本书。',
+            '%sentence2': '邻里的平静与安宁。'
+        }
+    });
+
+    equal(sentence1.toLocaleString(), expected1En,
+        'Sentence 1 translated as ' + expected1En + '.');
+    equal(sentence2.toLocaleString(), expected2En,
+        'Sentence 2 translated as ' + expected2En + '.');
+    equal(sentence3.toLocaleString(), expected3En,
+        'Sentence 3 translated as ' + expected3En + '.');
+    equal(sentence4.toLocaleString(), expected4En,
+        'Sentence 4 translated as ' + expected4En + '.');
+});
+
+test('EN specified', function () {
+    String.locale = 'en';
+
+    equal(sentence1.toLocaleString(), expected1En,
+        'Sentence 1 translated as ' + expected1En + '.');
+    equal(sentence2.toLocaleString(), expected2En,
+        'Sentence 2 translated as ' + expected2En + '.');
+    equal(sentence3.toLocaleString(), expected3En,
+        'Sentence 3 translated as ' + expected3En + '.');
+    equal(sentence4.toLocaleString(), expected4En,
+        'Sentence 4 translated as ' + expected4En + '.');
+});
+
+test('EN-GB specified', function () {
+    String.locale = 'en-GB';
+
+    equal(sentence1.toLocaleString(), expected1EnGb,
+        'Sentence 1 translated as ' + expected1EnGb + '.');
+    equal(sentence2.toLocaleString(), expected2EnGb,
+        'Sentence 2 translated as ' + expected2EnGb + '.');
+    equal(sentence3.toLocaleString(), expected3En,
+        'Sentence 3 translated as ' + expected3En + '.');
+    equal(sentence4.toLocaleString(), expected4EnGb,
+        'Sentence 4 translated as ' + expected4EnGb + '.');
+});
+
+test('ZH specified', function () {
+    String.locale = 'zh';
+
+    equal(sentence1.toLocaleString(), expected1Zh,
+        'Sentence 1 translated as ' + expected1Zh + '.');
+    equal(sentence2.toLocaleString(), expected2Zh,
+        'Sentence 2 translated as ' + expected2Zh + '.');
+    equal(sentence3.toLocaleString(), sentence3,
+        'Sentence 3 NOT translated due to missing variable.');
+    equal(sentence4.toLocaleString(), sentence4,
+        'Sentence 4 NOT translated due to missing variable.');
+});
+
+test('ZH specified, EN default', function () {
+    String.defaultLocale = 'en';
+    String.locale = 'zh';
+
+    equal(sentence1.toLocaleString(), expected1Zh,
+        'Sentence 1 translated as ' + expected1Zh + '.');
+    equal(sentence2.toLocaleString(), expected2Zh,
+        'Sentence 2 translated as ' + expected2Zh + '.');
+    equal(sentence3.toLocaleString(), expected3En,
+        'Sentence 3 translated as ' + expected3En + '.');
+    equal(sentence4.toLocaleString(), expected4En,
+        'Sentence 4 translated as ' + expected4En + '.');
+});
+
+test('ZH specified, EN-GB default', function () {
+    String.defaultLocale = 'en-GB';
+    String.locale = 'zh';
+
+    equal(sentence1.toLocaleString(), expected1Zh,
+        'Sentence 1 translated as ' + expected1Zh + '.');
+    equal(sentence2.toLocaleString(), expected2Zh,
+        'Sentence 2 translated as ' + expected2Zh + '.');
+    equal(sentence3.toLocaleString(), expected3En,
+        'Sentence 3 translated as ' + expected3En + '.');
+    equal(sentence4.toLocaleString(), expected4EnGb,
+        'Sentence 4 translated as ' + expected4EnGb + '.');
+});
+</script>
+</html>
+

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ch">
+<html>
 <head>
     <meta charset="utf-8">
-    <title>No Translation Test</title>
+    <title>Two Locales Test</title>
     <link rel="stylesheet" href="qunit.css">
 </head>
 <body>
@@ -18,7 +18,7 @@ test('2 locales (default)', function () {
         expectedZh = '书架上有一本书',
         expectedEn = "There is 1 book on the shelf.";
 
-    //initiate 1 locale
+    //initiate 2 locale
     String.toLocaleString({
         'en': {
             '%sentence': 'There is 1 book on the shelf.',
