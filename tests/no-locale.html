@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ch">
+<html>
 <head>
     <meta charset="utf-8">
-    <title>No Translation Test</title>
+    <title>No Locale Test</title>
     <link rel="stylesheet" href="qunit.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <script src="qunit.js"></script>
 </body>
 <script>
-test('toLocaleString Unaffected', function () {
+test('toLocaleString unaffected', function () {
     var input = "The quick brown fox jumps over the lazy dog.",
         expected = "The quick brown fox jumps over the lazy dog.";
     equal(input, expected, 'This should work with no problem.');
