@@ -71,7 +71,7 @@ var
 	}
 }
 , load = String_ctr[$to_locale_string] = function (data) {
-	// don't handle function[$to_locale_string](indentationAmount:Number)
+	// don't handle function.toLocaleString(indentationAmount:Number)
 	if (arguments.length > 0 && typeof data !== "number") {
 		if (typeof data === string_type) {
 			load(request_JSON(data));
@@ -118,7 +118,7 @@ var
 			}
 		}
 	}
-	// Return what function[$to_locale_string]() normally returns
+	// Return what function.toLocaleString() normally returns
 	return Function.prototype[$to_locale_string].apply(String_ctr, arguments);
 }
 , process_load_queue = function (locale) {
