@@ -139,6 +139,10 @@ var
 }
 , use_default
 , localize = String_ctr.prototype[$to_locale_string] = function () {
+	if (typeof this === undef_type) {
+		return this;
+	}
+	
 	var
 	  using_default = use_default
 	, current_locale = String_ctr[using_default ? $default_locale : $locale]
