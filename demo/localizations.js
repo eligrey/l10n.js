@@ -91,5 +91,10 @@ String.toLocaleString({
 	"hu": {
 		"%title": "Magyar - l10n.js demo",
 		"%info": "A magyar nyelvű honosítását nézed ennek az oldalnak."
+	},
+	"cs": {
+		"%title": "Čeština - l10n.js demo",
+		"%info": "Prohlížíte si českou lokalizaci stránek."
 	}
+
 });
