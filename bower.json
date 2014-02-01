@@ -1,18 +1,18 @@
 {
-  name: 'l10n.js',
-  main: 'l10n.js',
-  homepage: 'http://purl.eligrey.com/l10n.js',
-  description: 'Passive localization JavaScript library',
-  keywords: [
-    'localization',
-    'l10n'
+  "name": "l10n.js",
+  "main": "l10n.js",
+  "homepage": "http://purl.eligrey.com/l10n.js",
+  "description": "Passive localization JavaScript library",
+  "keywords": [
+    "localization",
+    "l10n"
   ],
-  authors: [
-    'ΩF:∅ Working Group'
+  "authors": [
+    "ΩF:∅ Working Group"
   ],
-  license: 'MIT',
-  ignore: [
-    '**/.*',
-    'tests'
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "tests"
   ]
 }
