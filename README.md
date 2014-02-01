@@ -14,7 +14,7 @@ Demo
 
 You can try out the [online demo][1] to see l10n.js in action.
 
-Currently the demo only supports the following locales.
+Currently the demo supports the following locales.
 
 * [English](http://purl.eligrey.com/l10n.js/demo/en)
     * [American English](http://purl.eligrey.com/l10n.js/demo/en-US)
