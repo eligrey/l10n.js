@@ -95,6 +95,10 @@ String.toLocaleString({
 	"cs": {
 		"%title": "Čeština - l10n.js demo",
 		"%info": "Prohlížíte si českou lokalizaci stránek."
+	},
+	"ca": {
+		"%title": "Català - l10n.js demo",
+		"%info": "Vostè està veient una versió en català d’aquesta pàgina."
 	}
 
 });
