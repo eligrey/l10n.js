@@ -1,6 +1,6 @@
 /*
  * l10n.js
- * 2013-04-18
+ * 2014-05-02
  * 
  * By Eli Grey, http://eligrey.com
  * Licensed under the X11/MIT License
