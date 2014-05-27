@@ -4,7 +4,7 @@
  * 
  * By Eli Grey, http://eligrey.com
  * Licensed under the X11/MIT License
- *   See LICENSE.md
+ *   See https://github.com/eligrey/l10n.js/blob/master/LICENSE.md
  */
 
 /*global XMLHttpRequest, setTimeout, document, navigator, ActiveXObject*/
