@@ -99,6 +99,10 @@ String.toLocaleString({
 	"ca": {
 		"%title": "Català - l10n.js demo",
 		"%info": "Vostè està veient una versió en català d’aquesta pàgina."
+	},
+	"ja": {
+		"%title": "Japanese - l10n.js デモ",
+		"%info": "日本語にローカライズされたページを見ています。"
 	}
 
 });
