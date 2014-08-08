@@ -41,6 +41,7 @@ Currently the demo supports the following locales.
 * [Hungarian](http://purl.eligrey.com/l10n.js/demo/hu)
 * [Czech](http://purl.eligrey.com/l10n.js/demo/cs)
 * [Catalan](http://purl.eligrey.com/l10n.js/demo/ca)
+* [Japanese](http://purl.eligrey.com/l10n.js/demo/ja)
 
 If you know a language that isn't currently supported in the demo, I encourage you to
 contribute a localization by sending me your own localizations, either [through GitHub][2]
@@ -215,7 +216,7 @@ them) containing their type if they are not functions or return type if they are
     "en-GB": false, // resetting British English localizations
     // Specifying external localization JSON for Japanese:
     // The URL isn't requested unless the user's locale is Japanese
-    "jp": "localizations/jp.json"
+    "ja": "localizations/ja.json"
 })</code></pre>
       </li>
       <li>
