@@ -103,6 +103,10 @@ String.toLocaleString({
 	"ja": {
 		"%title": "Japanese - l10n.js デモ",
 		"%info": "日本語にローカライズされたページを見ています。"
+	},
+	"la": {
+		"%title": "Latina - l10n.js demonstratio",
+		"%info":  "prospectas Latinam translationem huius paginae"
 	}
 
 });
