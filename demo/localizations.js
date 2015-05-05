@@ -107,6 +107,9 @@ String.toLocaleString({
 	"la": {
 		"%title": "Latina - l10n.js demonstratio",
 		"%info":  "prospectas Latinam translationem huius paginae"
+	},
+	"pl": {
+		"%title": "Polski - demo l10n.js",
+		"%info": "Przeglądasz tłumaczenie tej strony na język polski."
 	}
-
 });
