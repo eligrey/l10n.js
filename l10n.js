@@ -3,7 +3,7 @@
  * 2014-05-02
  * 
  * By Eli Grey, http://eligrey.com
- * Licensed under the X11/MIT License
+ * Licensed under the MIT License
  *   See https://github.com/eligrey/l10n.js/blob/master/LICENSE.md
  */
 
