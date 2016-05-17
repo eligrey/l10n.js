@@ -1,6 +1,6 @@
 /*
  * l10n.js
- * 2014-05-02
+ * 2016-05-17
  * 
  * By Eli Grey, http://eligrey.com
  * Licensed under the MIT License
@@ -165,7 +165,7 @@ var
 			return localizations[locale][this_val];
 		}
 	}
-	while (i --> 1);
+	while (i--);
 	
 	if (!using_default && String_ctr[$default_locale]) {
 		use_default = TRUE;

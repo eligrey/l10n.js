@@ -1,4 +1,4 @@
-Copyright © 2015 [OFTN Inc.][1]
+Copyright © 2016 [OFTN Inc.][1]
 
 ### MIT License
 

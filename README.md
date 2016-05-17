@@ -12,36 +12,7 @@ engines, so when l10n.js isn't present, your application works fine.
 Demo
 ----
 
-You can try out the [online demo][1] to see l10n.js in action.
-
-Currently the demo supports the following locales.
-
-* [English](http://purl.eligrey.com/l10n.js/demo/en)
-    * [American English](http://purl.eligrey.com/l10n.js/demo/en-US)
-    * [British English](http://purl.eligrey.com/l10n.js/demo/en-GB)
-    * [Canadian English](http://purl.eligrey.com/l10n.js/demo/en-CA)
-    * [Australian English](http://purl.eligrey.com/l10n.js/demo/en-AU)
-* [Portuguese](http://purl.eligrey.com/l10n.js/demo/pt)
-* [Spanish](http://purl.eligrey.com/l10n.js/demo/es)
-* [French](http://purl.eligrey.com/l10n.js/demo/fr)
-* [Dutch](http://purl.eligrey.com/l10n.js/demo/nl)
-* [German](http://purl.eligrey.com/l10n.js/demo/de)
-* [Finnish](http://purl.eligrey.com/l10n.js/demo/fi)
-* [Vietnamese](http://purl.eligrey.com/l10n.js/demo/vi)
-* [Italian](http://purl.eligrey.com/l10n.js/demo/it)
-* [Norwegian](http://purl.eligrey.com/l10n.js/demo/no)
-* [Russian](http://purl.eligrey.com/l10n.js/demo/ru)
-* [Lojban](http://purl.eligrey.com/l10n.js/demo/jbo)
-* [Danish](http://purl.eligrey.com/l10n.js/demo/da)
-* [Hebrew](http://purl.eligrey.com/l10n.js/demo/he)
-* [Bulgarian](http://purl.eligrey.com/l10n.js/demo/bg)
-* [Simplified Chinese](http://purl.eligrey.com/l10n.js/demo/zh)
-* [Swedish](http://purl.eligrey.com/l10n.js/demo/se)
-* [Turkish](http://purl.eligrey.com/l10n.js/demo/tr)
-* [Hungarian](http://purl.eligrey.com/l10n.js/demo/hu)
-* [Czech](http://purl.eligrey.com/l10n.js/demo/cs)
-* [Catalan](http://purl.eligrey.com/l10n.js/demo/ca)
-* [Japanese](http://purl.eligrey.com/l10n.js/demo/ja)
+This repository includes a simple demo that you can try out on your webserver.
 
 If you know a language that isn't currently supported in the demo, I encourage you to
 contribute a localization by sending me your own localizations, either [through GitHub][2]
@@ -59,7 +30,6 @@ Supported Browsers
 * Internet Explorer 5+
 * Firefox 2+
 * Opera 9+
-    * Doesn't support region-specific locales. Only gives "en" in the case of "en-US".
 * Google Chrome 1+
 * Safari 4+
 
@@ -251,8 +221,9 @@ them) containing their type if they are not functions or return type if they are
   </dd>
 </dl>
 
+### Default locale
 
-![Tracking image](https://in.getclicky.com/212712ns.gif)
+The `""` (empty string) locale is the default locale, where you can specify default or fallback strings.
 
   [1]: http://purl.eligrey.com/l10n.js/demo
   [2]: https://github.com/eligrey/l10n.js/edit/master/demo/localizations.js
