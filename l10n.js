@@ -197,7 +197,9 @@ if (typeof XMLHttpRequest === undef_type && typeof ActiveXObject !== undef_type)
 }
 
 String_ctr[$default_locale] = String_ctr[$default_locale] || "";
-String_ctr[$locale] = nav && (nav.language || nav.userLanguage) || "";
+if (!String_ctr[$locale]) {
+	String_ctr[$locale] = nav && (nav.language || nav.userLanguage) || "";
+}
 
 if (typeof document !== undef_type) {
 	var
