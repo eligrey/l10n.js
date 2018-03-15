@@ -78,7 +78,7 @@ bandwidth by decreasing the size of localization files, and it enables you to wr
 nice, short code as such in the following.
 
 * `document.title = l("%title.search")`
-    * Example results: `"Seach - Acme, Inc."`
+    * Example results: `"Search - Acme, Inc."`
 * `confirm(l("%confirm.deleteAccount"))`
     * Example results: `"Are you sure you want to delete your account?"`
 * `link.href = "http://www.google." + l("%locale.tld")`
